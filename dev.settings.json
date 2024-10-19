@@ -1,0 +1,10 @@
+{
+  "baseUrl": "https://scss.app.cannabizelite.com.au/",
+  "env": {
+    "apiUrl": "",
+    "nurseEmail": "tech@scssconsulting.com",
+    "nursePassword": "Test@123",
+    "prescriberEmail": "sujan+prescriber@scssconsulting.com",
+    "prescriberPassword": "Test@123"
+  }
+}

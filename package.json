@@ -1,0 +1,42 @@
+{
+  "name": "cannabizelite-automation-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "delete:reports": "rimraf cypress/reports/* || true",
+    "prereport": "npm run delete:reports",
+    "generate-report": "generate-mochawesome-report --set-exit-code",
+    "cy:open_process": "cypress open",
+    "cy:run_process": "cypress run --env environmentName=$npm_config_env --browser chrome",
+    "cy:run:parallel": "cypress-parallel -s cy:run_process  -t 2 -d 'cypress/e2e/frontendTests/**/nurse_login.spec.ts' -r 'cypress-mochawesome-reporter' -o 'cypressParallel=true,charts=true,embeddedScreenshots=true,inlineAssets=true,reportFilename=[status]_[datetime]-report,reportTitle=Automation Test Report'",
+    "cy:run:e2e": "cypress-parallel -s cy:run_process  -t 2 -d 'cypress/e2e/frontendTests/**/end-to-end-patient-nurse-prescriber-workflow.spec.ts' -r 'cypress-mochawesome-reporter' -o 'cypressParallel=true,charts=true,embeddedScreenshots=true,inlineAssets=true,reportFilename=[status]_[datetime]-report,reportTitle=Automation Test Report'",
+    "cy:run_test": "npm run prereport && npm run cy:run:parallel || true && npm run generate-report",
+    "cy:run_e2e_test": "npm run prereport && npm run cy:run:e2e || true && npm run generate-report",
+    "cy:open_test": "cypress open --env environmentName=$npm_config_env"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^20.11.25",
+    "ajv": "^8.12.0",
+    "cypress": "^13.9.0",
+    "cypress-dotenv": "^2.0.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-multi-reporters": "^1.6.3",
+    "cypress-parallel": "^0.14.0",
+    "dotenv": "^16.4.5",
+    "moment": "^2.30.1",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.4.2",
+    "percy-figma": "^1.0.8",
+    "playwright-webkit": "^1.42.1",
+    "webpack-cli": "^5.1.4",
+    "cypress-iframe": "^1.0.1",
+    "@percy/cli": "^1.28.5",
+    "@percy/cypress": "^3.1.2",
+    "@faker-js/faker": "^8.4.1"
+  }
+}

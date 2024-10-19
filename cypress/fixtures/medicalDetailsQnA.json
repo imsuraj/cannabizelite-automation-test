@@ -1,0 +1,32 @@
+{
+  "medicalQuestions": [
+    {
+      "question": "Are you part of an Opioid Substitution Treatment Program ? (the Methadone Program)",
+      "answer": "Yes"
+    },
+    {
+      "question": "Do you have low BP ?",
+      "answer": "No"
+    },
+    {
+      "question": "Are you happy to use our partner pharmacy, GoGoMed for dispensing",
+      "answer": "No"
+    },
+    {
+      "question": "Any heart arrhythmia ?",
+      "answer": "Yes"
+    },
+    {
+      "question": "Patient pregnant or breastfeeding ?",
+      "answer": "No"
+    },
+    {
+      "question": "Previous 'black-market/off-street' cannabis use ?",
+      "answer": "No"
+    },
+    {
+      "question": "Previous/current medicinal cannabis use ?",
+      "answer": "Yes"
+    }
+  ]
+}

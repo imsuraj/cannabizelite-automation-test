@@ -1,0 +1,14 @@
+# Ignore Cypress directories and files
+/node_modules
+.DS_Store
+cypress/reports/
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+runner-results
+multi-reporter-config.json
+parallel-weights.json
+.tmp
+
+
+

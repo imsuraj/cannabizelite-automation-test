@@ -1,0 +1,28 @@
+{
+  "screeningQuestions": [
+    {
+      "question": "Are you over 18 ?",
+      "answer": "Yes"
+    },
+    {
+      "question": "Have you been diagnosed with a medical condition ?",
+      "answer": "Yes"
+    },
+    {
+      "question": "Have you had this condition for more than three months ?",
+      "answer": "Yes"
+    },
+    {
+      "question": "Have you tried standard medication without benefit ?",
+      "answer": "Yes"
+    },
+    {
+      "question": "Do you have a history of psychosis ?",
+      "answer": "No"
+    },
+    {
+      "question": "Are you pregnant ?",
+      "answer": "No"
+    }
+  ]
+}

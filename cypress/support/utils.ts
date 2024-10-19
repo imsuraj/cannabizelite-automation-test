@@ -37,9 +37,9 @@ export const nurseName = "SCSS Nurse";
 export const doctorName = "Rick Cooper";
 export const options = { yes: "Yes", no: "No" };
 export const emailDomain = "@scssconsulting.com";
-export const emailPrefix = "suraj.anand";
+export const emailPrefix = "scss.test";
 export const patientEmail = `${emailPrefix}+${getTime()}${emailDomain}`;
-export const patientPassword = "Test@123";
+export const patientPassword = "Test@#$321";
 
 // Function to get the current date and future date in various formats
 export const getDateInfo = (daysToAdd = 0) => {

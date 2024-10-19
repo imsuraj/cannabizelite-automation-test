@@ -3,7 +3,7 @@ name: Run Cypress tests
 on:
   push:
     branches:
-      - dev
+      - qa
   workflow_dispatch:
 
 jobs:
